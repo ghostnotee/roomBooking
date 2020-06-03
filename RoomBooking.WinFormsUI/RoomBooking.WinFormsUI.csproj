@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D10B63DB-006D-450A-AD49-1569DF21F279}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RoomBooking.WinFormsUI</RootNamespace>
+    <AssemblyName>RoomBooking.WinFormsUI</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmGuest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGuest.Designer.cs">
+      <DependentUpon>frmGuest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGuests.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGuests.Designer.cs">
+      <DependentUpon>frmGuests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReservationByGuest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReservationByGuest.Designer.cs">
+      <DependentUpon>frmReservationByGuest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRoomEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRoomEdit.Designer.cs">
+      <DependentUpon>frmRoomEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmShowReservations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowReservations.Designer.cs">
+      <DependentUpon>frmShowReservations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="frmReservationEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReservationEdit.Designer.cs">
+      <DependentUpon>frmReservationEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoomButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RoomButton.Designer.cs">
+      <DependentUpon>RoomButton.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmGuest.resx">
+      <DependentUpon>frmGuest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGuests.resx">
+      <DependentUpon>frmGuests.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReservationByGuest.resx">
+      <DependentUpon>frmReservationByGuest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRoomEdit.resx">
+      <DependentUpon>frmRoomEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShowReservations.resx">
+      <DependentUpon>frmShowReservations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="frmReservationEdit.resx">
+      <DependentUpon>frmReservationEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoomButton.resx">
+      <DependentUpon>RoomButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RoomBooking.Business\RoomBooking.Business.csproj">
+      <Project>{E2670197-8A4E-496C-BA41-FF4B9C730FD9}</Project>
+      <Name>RoomBooking.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RoomBooking.DataAccess\RoomBooking.DataAccess.csproj">
+      <Project>{6D202CA0-2B10-47E2-A138-9FCDC2193A75}</Project>
+      <Name>RoomBooking.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RoomBooking.Entites\RoomBooking.Entites.csproj">
+      <Project>{fde5adc0-3ad4-4f2d-afbc-a51cb89907a6}</Project>
+      <Name>RoomBooking.Entites</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001-hotel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\008-book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\004-man.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\005-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\004-man1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
